@@ -1,0 +1,16 @@
+x= random.randint(0,100)
+ans=0
+count=0
+counts=""
+while ans !=x :
+    a=input("Guess the number between 0 and 100- ")
+    ans=int(a)
+    count=count+1
+    counts=str(count)
+    if ans > x:
+        print("Try again! You guessed too high.")
+    elif ans < x:
+        print("Try again! You guessed too low.")
+
+
+print("Great job you guessed the number in "+counts+" trials")
